@@ -4,7 +4,7 @@ library(purrr)         # For functional programming helpers
 library(FNN)           # For k-nearest neighbors functions
 
 # Read in the men's data from CSV and start cleaning it up.
-mens <- read.csv("~/Documents/CDJ/CDJ Semester 2 Project/EverythingCombinedMens.csv") |> 
+mens <- read.csv("nba_combined.csv") |> 
   select(-X) |>  
   mutate(Pos = case_when(   # Simplify position labels: PF and SF become "F", PG and SG become "G"
     Pos == "PF" ~ "F",
@@ -65,7 +65,7 @@ mens_normalized <- mens |>
   filter(!is.na(weight))      # Remove rows missing weight
 
 # Read in the women's data from CSV and clean it up similarly
-women <- read.csv("~/Documents/CDJ/CDJ Semester 2 Project/wnba_combined.csv") |> 
+women <- read.csv("wnba_combined.csv") |> 
   mutate(Pos = case_when(   # Clean up position labels same as before
     Pos == "F-C" ~ "F",
     Pos == "C-F" ~ "C",

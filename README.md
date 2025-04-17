@@ -15,7 +15,7 @@ This project was made through the Cornell Data Journal. We used machine learning
 - NBA Player Bios: NBA.com (https://www.nba.com/stats/players/bio)
 - WNBA Player Bios: WNBA.com (https://stats.wnba.com/players/bio/)
 
-## Steps
+## Steps for Reproducibility
 - **First**: run wnbacomps_statline.ipynb (for basic statline comparison)
 - **Next**: run wnbacomps_cleaningandmodel.R (for data cleaning, normalization, and the matching model)
 - **Next**: run wnbacomps_spidercharts.R (for spider charts showcasing matches)

@@ -4,7 +4,7 @@ library(purrr)         # For functional programming helpers
 library(FNN)           # For k-nearest neighbors functions
 
 # Read in the men's data from CSV and start cleaning it up.
-mens <- read.csv("~/Documents/CDJ/CDJ Semester 2 Project/EverythingCombinedMens.csv") |> 
+mens <- read.csv("~/csvs/COMBINED/CombinedMens.csv") |> 
   select(-X) |>  
   mutate(Pos = case_when(   # Simplify position labels: PF and SF become "F", PG and SG become "G"
     Pos == "PF" ~ "F",

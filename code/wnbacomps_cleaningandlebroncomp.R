@@ -1,3 +1,6 @@
+library(dplyr)
+library(tidyverse)
+
 # Read in the NBA stats CSV for each season from 2003-04 to 2023-24,
 # and add a "Season" column to each data frame.
 NBA_Stats_03_04 <- read_csv("NBA STATS/NBA Stats 03-04 - Sheet 1.csv") %>% mutate(Season = "03-04")
@@ -105,11 +108,11 @@ write.csv(all_combined, "EverythingCombinedMens.csv")
 # WNBA
 
 # Read in the WNBA stats for the 2023-24 season.
-WNBA_Stats_23_24 <- read_csv("~/Documents/CDJ/CDJ Semester 2 Project/NBA PLAYER BIOS/wnba_stats.csv") %>%
+WNBA_Stats_23_24 <- read_csv("~WNBA/wnba_stats.csv") %>%
   mutate(Season = "23-24")
 
 # Read in the WNBA bios for the 2023-24 season.
-wnba_2324 <- read_csv("~/Documents/CDJ/CDJ Semester 2 Project/NBA PLAYER BIOS/wnba_bios.csv") %>% 
+wnba_2324 <- read_csv("~WNBA/wnba_bios.csv") %>% 
   mutate(Season = "23-24")
 
 # Merge the WNBA bios and stats together by matching player name, team, and season.

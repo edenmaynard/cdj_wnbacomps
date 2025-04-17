@@ -17,6 +17,6 @@ This project was made through the Cornell Data Journal. We used machine learning
 
 ## Steps for Reproducibility
 - **First**: run wnbacomps_statline.ipynb (for basic statline comparison)
+- **Next**: run wnbacomps_lebroncomp.R (for data cleaning and to see Lebron's longevity comp)
 - **Next**: run wnbacomps_cleaningandmodel.R (for data cleaning, normalization, and the matching model)
-- **Next**: run wnbacomps_spidercharts.R (for spider charts showcasing matches)
-- **Last**: run wnbacomps_lebroncomp.R (to see Lebron's longevity comp)
+- **Last**: run wnbacomps_spidercharts.R (for spider charts showcasing matches)
